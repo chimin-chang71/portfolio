@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>個人作品集</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fdfdf9;
+      color: #333;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .navbar {
+      background-color: #d3c2b4;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #5a4b3b;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #d3c2b4;
+      text-align: center;
+      padding: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">我的作品集</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">個人資訊</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">作品集</a></li>
+          <li class="nav-item"><a class="nav-link" href="#applications">應用</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="personal.jpeg" alt="個人照片" class="rounded-circle img-fluid shadow" style="width: 250px; height: 250px; object-fit: cover;" >
+      </div>
+      <div class="col-md-7 text-md-start text-center">
+        <h1 class="fw-bold">你好，我是張琦旻！</h1>
+        <p class="fs-5">現就讀國立台灣科技大學企業管理學系，善於團隊協作與溝通，具備活動策劃與執行能力，能有效提升成員參與度與團隊凝聚力，並透過創新思維與解決問題能力，提升組織運作效率。</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="container py-5">
+  <h2 class="text-center mb-5">作品集</h2>
+
+  <!-- Google MediaPipe -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <h4 class="text-primary fw-bold">Google MediaPipe</h4>
+      <h6 class="fw-semibold mb-3">手部偵測應用開發</h6>
+      <p>實作手部追蹤與姿勢識別，並延伸應用於互動式控制介面與表情操控。</p>
+    </div>
+    <div class="col-md-6">
+      <div id="carouselMediapipe" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Unit 4.png" class="d-block w-100" alt="mediapipe demo 1">
+          </div>
+          <div class="carousel-item">
+            <img src="Unit 5.png" class="d-block w-100" alt="mediapipe demo 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMediapipe" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMediapipe" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teachable Machine -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 order-md-2">
+      <h4 class="text-primary fw-bold">Teachable Machine</h4>
+      <h6 class="fw-semibold mb-3">影像模型訓練</h6>
+      <p>透過簡單操作介面進行自定義影像分類訓練，實作實時辨識系統。</p>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <div id="carouselTeachable" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Unit9-3.png" class="d-block w-100" alt="teachable demo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Streamlit -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <h4 class="text-primary fw-bold">Streamlit</h4>
+      <h6 class="fw-semibold mb-3">快速部署 AI App</h6>
+      <p>使用 Python + Streamlit 建立互動式網頁介面，搭配模型展示即時回饋。</p>
+    </div>
+    <div class="col-md-6">
+      <img src="Unit 10.png" class="img-fluid rounded shadow" alt="streamlit demo">
+    </div>
+  </div>
+
+  <!-- LLM / API -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 order-md-2">
+      <h4 class="text-primary fw-bold">LLM / API 整合</h4>
+      <h6 class="fw-semibold mb-3">語意理解應用</h6>
+      <p>呼叫 OpenAI API 建立智慧對話機器人，支援語意理解與角色模擬。</p>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <img src="0401.png" class="img-fluid rounded shadow" alt="llm api">
+    </div>
+  </div>
+
+  <!-- LangChain -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <h4 class="text-primary fw-bold">LangChain</h4>
+      <h6 class="fw-semibold mb-3">文件問答系統</h6>
+      <p>使用 LangChain 架構 RAG 模型，結合本地文檔與語言模型進行精準問答。</p>
+    </div>
+    <div class="col-md-6">
+      <img src="LLM.png" class="img-fluid rounded shadow" alt="langchain demo">
+    </div>
+  </div>
+</section>
+<!-- Applications Section -->
+<section id="applications" class="container py-5">
+  <h2 class="text-center mb-4">AI與生活應用</h2>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h5>PDF 簡報預覽</h5>
+      <iframe src="B11108073－張琦旻－我的耍廢日記.pdf" width="100%" height="400px" style="border: 1px solid #ccc;"></iframe>
+    </div>
+
+    <div class="col-md-6">
+      <h5>AI 示範影片播放</h5>
+      <video width="100%" controls class="rounded shadow">
+        <source src="B11108073－張琦旻－我的耍廢日記.mp4" type="video/mp4">
+        您的瀏覽器不支援影片播放。
+      </video>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="B11108073-張琦旻-我的耍廢日記.pdf" class="btn btn-outline-primary me-2" download>下載 PDF 簡報</a>
+    <a href="B11108073-張琦旻-我的耍廢日記.mp4" class="btn btn-outline-secondary" download>下載影片</a>
+  </div>
+</section>
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>聯絡方式</h2>
+    <ul>
+      <li><strong>電話：</strong>+886-972967255</li>
+      <li><strong>Email：</strong>chimin.chang71@gmail.com</li>
+      <li><strong>LinkedIn：</strong><a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn 個人頁</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 我的個人作品集
+  </footer>
+
+  <script src="www.linkedin.com/in/chiminchang"></script>
+</body>
+</html>
